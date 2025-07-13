@@ -1,6 +1,10 @@
+# Тестирование
 pytest==7.4.0
 pytest-cov==4.1.0
+
+# Проверки
 mypy==1.5.1
 flake8==6.1.0
+
+# Хуки
 pre-commit==3.3.3
-codecov==2.1.13
