@@ -1,0 +1,13 @@
+[tool.pytest.ini_options]
+pythonpath = ["1_theory/src"]
+testpaths = ["1_theory/tests"]
+addopts = "--cov=1_theory/src --cov-report=xml"  # Генерирует отчет в XML
+
+[tool.mypy]
+python_version = "3.13"
+warn_return_any = true
+disallow_untyped_defs = true
+paths = ["1_theory/src"]
+
+[tool.coverage.run]
+source = ["1_theory/src"]
