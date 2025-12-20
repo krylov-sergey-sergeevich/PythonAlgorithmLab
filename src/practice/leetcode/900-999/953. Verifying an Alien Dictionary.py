@@ -1,6 +1,6 @@
 from typing import List
 
-from src.AssertUtils import check
+from src.tools.AssertUtils import check
 
 """
 https://leetcode.com/problems/verifying-an-alien-dictionary/

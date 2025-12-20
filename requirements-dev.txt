@@ -1,10 +1,10 @@
 # Тестирование
-pytest==7.4.0
-pytest-cov==4.1.0
+pytest==8.3.3
+pytest-cov==5.0.0
 
 # Проверки
-mypy==1.5.1
-flake8==6.1.0
+mypy==1.13.0
+flake8==7.1.1
 
 # Хуки
-pre-commit==3.3.3
+pre-commit==3.8.0

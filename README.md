@@ -2,50 +2,90 @@
 
 # 🐍 Python Algorithm Lab
 
-📚 Этот репозиторий содержит:  
-- **Теорию** по алгоритмам и структурам данных  
-- **Практику** решения задач (LeetCode, Codeforces и др.)  
-- **Заметки** и полезные советы по Python  
-- **Дневник** решений с разбором задач  
+📚 Этот репозиторий содержит:
+- **Теорию** по алгоритмам и структурам данных
+- **Практику** решения задач (LeetCode, Codeforces и др.)
+- **Заметки** и полезные советы по Python
+- **Дневник** решений с разбором задач
 
 ## 🗂 Структура
-  
+
 ### 📦 Установка и настройка
 
-**Базовые зависимости (для использования кода)**
+#### Виртуальное окружение (рекомендуется)
 
-`pip install -e .`
+Создайте и активируйте виртуальное окружение:
 
-**Для разработки и тестирования**
+```bash
+# Создание виртуального окружения
+python -m venv env_python_algorithm_lab
 
-`pip install -r .\requirements-dev.txt`
+# Активация окружения
+# На Windows:
+.\env_python_algorithm_lab\Scripts\activate
 
-**Для CI/CD (если нужно добавить спец. зависимости)**
+# На macOS и Linux:
+source env_python_algorithm_lab/bin/activate
 
-`pip install -r requirements-dev.txt codecov` - _для отправки coverage в Codecov_
+# Теперь можно устанавливать пакеты в изолированное окружение
+pip install -r requirements.txt
+# или установка как локального пакета (-e)
+pip install -e .
 
-**Установка pre-commit хуков**
+# Деактивация окружения (когда закончите работать)
+deactivate
+```
 
-`pip pre-commit install`
-  
+#### Установка зависимостей
+
+**Базовые зависимости (для использования кода):**
+
+```bash
+pip install -e .
+```
+
+**Для разработки и тестирования:**
+
+```bash
+pip install -r requirements-dev.txt
+```
+
+**Для CI/CD (если нужно добавить специальные зависимости, например, для отправки покрытия в Codecov):**
+
+```bash
+pip install -r requirements-dev.txt codecov
+```
+
+#### Установка pre-commit хуков
+
+```bash
+pre-commit install
+```
+
 ### ⚡️ Быстрые команды
 
-**Запуск тестов с замером покрытия**
-```
+**Запуск тестов с замером покрытия:**
+
+```bash
 pytest 1_theory/tests/ --cov
 ```
 
-**Проверка типов**
-```
+**Проверка типов:**
+
+```bash
 mypy 1_theory/src/
 ```
 
-**Проверка стиля (PEP 8)**
-```
+**Проверка стиля (PEP 8):**
+
+```bash
 flake8 1_theory/src/
 ```
 
-**Принудительный запуск pre-commit**
+**Принудительный запуск всех pre-commit хуков:**
+
+```bash
+pre-commit run --all-files
 ```
-pre-commit run --all-files	
-```
+
+---
